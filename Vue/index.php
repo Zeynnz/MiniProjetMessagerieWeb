@@ -9,25 +9,27 @@
 
 </head>
 <body>
-    <div class="sidebar">
-        <h2>Conversations</h2>
-        <ul>
-            <li>Contact 1</li>
-            <li>Contact 2</li>
-            <li>Contact 3</li>
-        </ul>
+<div class="sidebar">
+    <h2>Conversations</h2>
+        <button>Option 1</button>
+        <button>Option 2</button>
+        <button>Option 3</button>
     </div>
+
     <div class="chat-container">
         <div class="messages">
-            <p><strong>Contact 1:</strong> Bonjour !</p>
-            <p><strong>Vous:</strong> Salut, comment ça va ?</p>
+            <p class="textMess"><strong>Contact 1:</strong> Bonjour !</p>
+            <p class="textMessU"><strong>Vous:</strong> Salut, comment ça va ?</p>
         </div>
         <div class="input-container">
-            <label>
-                <input type="text" placeholder="Ecrire un message...">
-            </label>
-            <button>Envoyer</button>
+            <button id="valider">Envoyer</button>
+            <div class="pseudoInput">
+                <label>
+                    <input type="text" name="pseudo" placeholder="Pseudo ...">
+                </label>
+            </div>
         </div>
+
     </div>
 </body>
 </html>
