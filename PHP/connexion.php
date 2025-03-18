@@ -7,7 +7,7 @@ abstract class connexion {
 
     public function __construct(){
         $host = 'localhost'; // Hostname or IP
-        $port = 3306;       // Default PostgreSQL port
+        $port = 3306;    // Default PostgreSQL port
         $dbname = 'messagerie'; // Your database name
         $user = 'zeynn_uti';      // Database username
         $password = 'iutinfo'; // Database password

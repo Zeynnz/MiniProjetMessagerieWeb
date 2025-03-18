@@ -1,4 +1,5 @@
 <?php
+session_start();
 ?>
 <html lang="fr">
 <head>
@@ -23,6 +24,7 @@
         </div>
         <div class="input-container">
             <button id="valider">Envoyer</button>
+            <a href="accueil.php">Vi</a>
             <div class="pseudoInput">
                 <label>
                     <input type="text" name="pseudo" placeholder="Pseudo ...">
