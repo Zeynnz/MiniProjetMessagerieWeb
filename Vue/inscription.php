@@ -3,6 +3,9 @@
 
 session_start();
 
+require_once __DIR__ . "/../PHP/Authentification.php";
+
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $login = trim($_POST['login']);
