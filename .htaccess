@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Définir afficher.php comme page par défaut
+    DirectoryIndex afficher.php
+</IfModule>

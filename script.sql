@@ -1,5 +1,5 @@
 CREATE TABLE
-  `message` (
+  `messagerie` (
     `id` int unsigned NOT NULL AUTO_INCREMENT,
     `estampille` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `auteur` varchar(50) NOT NULL,
