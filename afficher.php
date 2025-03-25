@@ -23,7 +23,8 @@ if (isset($_GET['action']) && $_GET['action'] === 'getSession') {
 
         let userId = null;
         document.addEventListener("DOMContentLoaded", function() {
-            checkSession()
+            checkSession();
+            recuperer();
 
             document.getElementById("valider").addEventListener("click", envoyer);
             document.getElementsByName("contenu")[0].addEventListener("keypress", function(event) {
@@ -43,7 +44,6 @@ if (isset($_GET['action']) && $_GET['action'] === 'getSession') {
                     })
                     .catch(error => console.error("Erreur AJAX :", error));
             });
-            recuperer();
             // Mettre à jour l'historique toutes les 5 secondes
             setInterval(recuperer, 5000);
         });

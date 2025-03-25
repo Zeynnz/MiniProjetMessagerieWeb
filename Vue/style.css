@@ -68,19 +68,25 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 20px;
     overflow-y: auto;
     background: #ecf0f1;
 }
 .messages .textMess {
+    display: inline-block; /* Permet à l'élément de s'ajuster au contenu */
+    max-width: 60%; /* Définit une largeur maximale */
     padding: 10px;
-    border : solid;
+    border: solid;
     border-color: black;
     border-radius: 8px;
     border-width: 2px;
-    max-width: 45%;
     box-shadow: 10px 5px 5px #b7b7ba;
+    margin-right: auto; /* Aligne l'élément à gauche */
+    word-wrap: break-word;       /* Casse les mots longs */
+    overflow-wrap: break-word;   /* Autre façon de casser les mots longs */
+    white-space: normal;
+    word-break: break-word;
 }
 
 .messages .textMessU {
